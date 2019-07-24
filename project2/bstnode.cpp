@@ -9,7 +9,7 @@ BstNode::BstNode()
 
 BstNode::BstNode(char c, char* s)
 {
-	strcpy(String, s);
+	strcpy_s(String, s);
 	Char = c;
 	pLeft = nullptr;
 	pRight = nullptr;
@@ -27,7 +27,7 @@ void BstNode::setChr(const char c)
 
 void BstNode::setStr(char *const s)
 {
-	strcpy(String, s);
+	strcpy_s(String, s);
 }
 
 void BstNode::setLeft(BstNode * const Left)
